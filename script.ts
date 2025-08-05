@@ -17,15 +17,15 @@ let lendo = true;
 while (lendo){
 alert(this.paginas[this.paginaatual]);
 let opcao = Number(prompt(
-'📘 '+(this.titulo)+ '- pagina' +(this.paginaatual + 1)+'/'+(this.paginas.length)+' \n' +
-"\n1 -> proxima pagina\n2 -> pagina anterior\n3 -> sair da leitura"
+'📘 '+(this.titulo)+ '- Pagina' +(this.paginaatual + 1)+'/'+(this.paginas.length)+' \n' +
+"\n1 -> Proxima pagina\n2 -> Pagina anterior\n3 -> Sair da leitura"
 )!);
 
 if(opcao == 1){
 if(this.paginaatual < this.paginas.length - 1){
 this.paginaatual = this.paginaatual + 1;
 }else{
-alert("voce ja esta na ultima pagina.");
+alert("Voce ja esta na ultima pagina.");
 }
 } else if(opcao == 2){
 if(this.paginaatual > 0){
@@ -35,9 +35,9 @@ alert("Você está na primeira página.");
 }
 }else if(opcao == 3){
 lendo = false;
-alert("voce saiu da leitura.");
+alert("Voce saiu da leitura.");
 }else{
-alert("opção invalida.");
+alert("Opção invalida.");
 }
 }
 }
